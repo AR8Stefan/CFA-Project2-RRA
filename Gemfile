@@ -39,7 +39,7 @@ gem 'devise'
 
 gem 'omniauth-facebook'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'simple_form' #intergrate with Bootstrap?
 

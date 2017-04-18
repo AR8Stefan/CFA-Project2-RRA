@@ -1,24 +1,36 @@
-# README
+# CFA-Project2_RRA - Refugee Recruitment Agency
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is about using Ruby on Rails to make an application and Impress either Barrack Obama, Richard Murdoch or Bill & Malinda Gates. (I've chosen to impress Barrack Obama with this app. :) )
 
-Things you may want to cover:
+### Set up
 
-* Ruby version
+* I used these gems in my project:
 
-* System dependencies
+>gem 'devise'
 
-* Configuration
+>gem 'omniauth-facebook'
 
-* Database creation
+>gem 'bootstrap-sass', '~> 3.3.6'
 
-* Database initialization
+>gem 'simple_form'
 
-* How to run the test suite
+>gem 'carrierwave', '~> 1.0'
 
-* Services (job queues, cache servers, search engines, etc.)
+>gem 'mailgun-ruby', '~>1.1.4'
 
-* Deployment instructions
+* Next run: >bundle install
 
-* ...
+* -add next step here-
+
+
+* Next copy to the >app/assets/stylesheets/application.scss
+(Don't forget to rename the application.css file to .scss)
+
+>@import "bootstrap-sprockets";
+>@import "bootstrap";
+
+	copy to the >app/assets/javascripts/application.js
+	(>//= require jquery 
+	This code should be there by default, add it in if it isn't)
+
+>//= require bootstrap-sprockets
