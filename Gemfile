@@ -37,11 +37,15 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 
+gem "rolify"
+
+gem "pundit"
+
 gem 'omniauth-facebook'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
-gem 'simple_form' #intergrate with Bootstrap?
+gem 'simple_form'
 
 gem 'carrierwave', '~> 1.0'
 

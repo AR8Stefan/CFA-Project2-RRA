@@ -22,6 +22,9 @@ This project is about using Ruby on Rails to make an application and Impress eit
 
 * -add next step here-
 
+>rails generate simple_form:install
+>rails generate devise:install
+
 
 * Next copy to the >app/assets/stylesheets/application.scss
 (Don't forget to rename the application.css file to .scss)
