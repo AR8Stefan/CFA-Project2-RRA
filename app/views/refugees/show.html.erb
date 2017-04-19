@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @refugee.name %>
+</p>
+
+<p>
+  <strong>Contactnumber:</strong>
+  <%= @refugee.contactNumber %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @refugee.occupation %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @refugee.language %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @refugee.description %>
+</p>
+
+<%= link_to 'Edit', edit_refugee_path(@refugee) %> |
+<%= link_to 'Back', refugees_path %>

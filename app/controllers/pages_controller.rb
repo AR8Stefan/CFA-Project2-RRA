@@ -2,6 +2,10 @@ class PagesController < ApplicationController
   def index
   end
 
+  def refugees
+    @refugees = Refugee.all
+  end
+
   def dashboard1
   end
 

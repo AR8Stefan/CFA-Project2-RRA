@@ -1,0 +1,29 @@
+<h1>Refugees</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contactnumber</th>
+      <th>Occupation</th>
+      <th>Language</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @refugees.each do |refugee| %>
+      <tr>
+        <td><%= refugee.name %></td>
+        <td><%= refugee.contactNumber %></td>
+        <td><%= refugee.occupation %></td>
+        <td><%= refugee.language %></td>
+        <td><%= refugee.description %></td>
+        <td><%= link_to 'Show', refugee %></td>
+        <td><%= link_to 'Edit', edit_refugee_path(refugee) %></td>
+        <td><%= link_to 'Destroy', refugee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

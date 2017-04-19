@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  resources :refugees
   devise_for :users
   root 'pages#index'
+
+  get 'pages/refugees'
 
   get 'pages/dashboard1'
 
