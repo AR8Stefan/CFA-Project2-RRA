@@ -15,6 +15,7 @@
   <tbody>
     <% @refugees.each do |refugee| %>
       <tr>
+      	<td><%= image_tag(@refugee.image_url(:thumb).to_s) %></td>
         <td><%= refugee.name %></td>
         <td><%= refugee.contactNumber %></td>
         <td><%= refugee.occupation %></td>

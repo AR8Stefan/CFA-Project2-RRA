@@ -37,3 +37,5 @@ This project is about using Ruby on Rails to make an application and Impress eit
 	This code should be there by default, add it in if it isn't)
 
 >//= require bootstrap-sprockets
+
+atom ~/.bash_profile

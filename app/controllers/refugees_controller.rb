@@ -29,8 +29,8 @@ class RefugeesController < ApplicationController
   # POST /refugees.json
   def create
     @refugee = Refugee.new(refugee_params)
-    @refugee
-
+    @refugee.user_id = current_user.id
+    
     respond_to do |format|
       if @refugee.save
         format.html { redirect_to @refugee, notice: 'Refugee was successfully created.' }
@@ -45,6 +45,7 @@ class RefugeesController < ApplicationController
   # PATCH/PUT /refugees/1
   # PATCH/PUT /refugees/1.json
   def update
+    authorize @refugee
     respond_to do |format|
       if @refugee.update(refugee_params)
         format.html { redirect_to @refugee, notice: 'Refugee was successfully updated.' }
@@ -74,6 +75,6 @@ class RefugeesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def refugee_params
-      params.require(:refugee).permit(:name, :contactNumber, :occupation, :language, :description)
+      params.require(:refugee).permit(:name, :contactNumber, :occupation, :language, :description, :image)
     end
 end

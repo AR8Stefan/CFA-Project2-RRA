@@ -43,11 +43,15 @@ gem "pundit"
 
 gem 'omniauth-facebook'
 
+gem 'pry'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'simple_form'
 
 gem 'carrierwave', '~> 1.0'
+
+gem 'mini_magick'
 
 gem 'mailgun-ruby', '~>1.1.4'
 

@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+
   resources :refugees
   devise_for :users
   root 'pages#index'
+
+  get 'contact', to: 'contact#index'
+
+  post 'contact', to: 'contact#mail'
 
   get 'pages/refugees'
 
