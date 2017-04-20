@@ -122,6 +122,9 @@ GEM
       rack (>= 1.6.2, < 3)
     omniauth-facebook (4.0.0)
       omniauth-oauth2 (~> 1.2)
+    omniauth-linkedin-oauth2 (0.1.5)
+      omniauth (~> 1.0)
+      omniauth-oauth2
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
@@ -233,6 +236,7 @@ DEPENDENCIES
   mailgun-ruby (~> 1.1.4)
   mini_magick
   omniauth-facebook
+  omniauth-linkedin-oauth2
   pg (~> 0.18)
   pry
   puma (~> 3.0)

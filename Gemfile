@@ -43,6 +43,8 @@ gem "pundit"
 
 gem 'omniauth-facebook'
 
+gem 'omniauth-linkedin-oauth2'
+
 gem 'pry'
 
 gem 'bootstrap-sass', '~> 3.3.6'
