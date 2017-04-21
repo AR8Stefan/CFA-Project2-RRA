@@ -2,6 +2,10 @@
 
 <h1>Refugees</h1>
 
+<% if @refugees.blank? %>
+  <h4>There are no refugees containing the term <%= params[:search] %>.</h4>
+<% end %>
+
 <table class="table table-hover">
   <thead>
     <tr>

@@ -1,0 +1,17 @@
+<div class="col-md-6">
+
+<% if flash[:notice] %>
+	<div class="notice"><%= flash[:notice] %></div>
+<% elsif flash[:warning] %>
+	<div class="alert alert-danger"><%= flash[:warning] %></div>å
+<% end %>
+
+<h1>Contact Us</h1>
+
+<%= simple_form_for :contact, :url => contact_path, :method => :post do |f| %>
+    <%= f.input :email, placeholder: 'Please type your email here' %>
+    <%= f.input :message, placeholder: 'Please type message here', :as => :text %>
+    <%= f.button :submit, "Hire!" %>
+<% end %>
+
+</div>

@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   get 'contact', to: 'contact#index'
+    post 'contact', to: 'contact#mail'
 
-  post 'contact', to: 'contact#mail'
+  get 'refugees', to: 'refugees#index'
+    post 'refugees', to: 'refugees#mail'
 
   get 'pages/refugees'
 
