@@ -8,6 +8,7 @@ class RefugeesController < ApplicationController
   end
 
   def index
+
     @refugees = Refugee.all
       if params[:search]
         @refugees = Refugee.search(params[:search]).order("created_at DESC")
