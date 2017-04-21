@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Refugees</h1>
+<%= @text %>
 
+<h1>Refugees</h1>
 <% if @refugees.blank? %>
   <h4>There are no refugees containing the term <%= params[:search] %>.</h4>
 <% end %>
