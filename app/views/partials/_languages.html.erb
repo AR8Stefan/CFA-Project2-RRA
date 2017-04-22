@@ -1,4 +1,5 @@
-<select class="goog-te-combo" aria-label="Select your language"><option value="">Select Language</option>
+<%= form_tag translate_index_path do %>
+<select name="language" class="goog-te-combo" aria-label="Select your language"><option value="">Select Language</option>
 <option value="af">Afrikaans</option>
 <option value="sq">Albanian</option>
 <option value="am">Amharic</option>
@@ -103,3 +104,10 @@
 <option value="yo">Yoruba</option>
 <option value="zu">Zulu</option>
 </select>
+
+<%#= hidden_field_tag :text, "hello there" %>
+<input type="text" name="translation_text">
+
+<%= submit_tag "Submit" %>
+
+<% end %>

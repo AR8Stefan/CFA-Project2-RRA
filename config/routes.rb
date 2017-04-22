@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'translate/index'
+  post 'translate/index'
+
   resources :refugees
   devise_for :users
   root 'pages#index'
