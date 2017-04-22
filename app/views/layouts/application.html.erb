@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project2</title>
+    <title>Refugee Recruitment Agency</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +12,11 @@
 
   	<%= render 'partials/nav' %>
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <%= render 'partials/footer' %>
 
   </body>
 </html>

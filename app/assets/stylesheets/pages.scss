@@ -6,14 +6,39 @@
 GENERAL
 ***********************************************/
 
+h1, h2, h3, h4, h5, h6 {
+	color: #B9320B;
+}
+
+body {
+	
+}
 
 /***********************************************
 HEADINGS
 ***********************************************/
 
 
+
 /***********************************************
 NAVBAR
+***********************************************/
+
+nav {
+	height: 80px;
+}
+
+nav ul li {
+	list-style-type: none;
+	margin: 13px;
+}
+
+/*.navbar ul li {
+	vertical-align: middle;
+}*/
+
+/***********************************************
+NAVBAR - Dropdown
 ***********************************************/
 
 nav ul ul {
@@ -21,7 +46,7 @@ nav ul ul {
 }
 
 nav ul li:hover > ul {
-		display: block;
+	display: block;
 }
 
 nav ul {
@@ -38,7 +63,9 @@ nav ul {
 }
 
 nav ul:after {
-		content: ""; clear: both; display: block;
+	content: "";
+	clear: both;
+	display: block;
 }
 
 .lang-bar {
@@ -49,23 +76,121 @@ nav ul:after {
 }
 
 /***********************************************
-
+FOOTER
 ***********************************************/
 
+footer {
+	position: absolute;
+	width: 100%;
+	padding-top: 20px;
+}
 
+footer ul li {
+	display: inline-block;
+	list-style-type: none;
+	height: 100px;
+}
+
+.search_field {
+	align-content: bottom;
+}
+
+.logo {
+	height: 50px;
+	border-radius: 25px;
+}
+
+.navbar-brand {
+	margin-right: 10px;
+}
+
+.foot-logo {
+	margin-top: 15px;
+}
 
 /***********************************************
-
+BODY
 ***********************************************/
 
+body {
+	padding-bottom: 50px;
+}
 
+li {
+	list-style-type: none;
+}
 
 /***********************************************
-
+TABLE
 ***********************************************/
 
-
+.table {
+	display: inline-block;
+	justify-content: center;
+}
 
 /***********************************************
-
+CONTACT
 ***********************************************/
+
+.contact {
+	height: 700px;
+	width: 50%;
+	display: inline-block;
+	direction: column;
+	justify-content: center;
+}
+
+.contact-test {
+	width: 100%;
+}
+
+/***********************************************
+COLOURS
+***********************************************/
+
+nav {
+	background-color: #9B6C5E;
+}
+
+nav ul li a, a {
+	color: #C82D00;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: #B9320B;
+}
+
+ul li a:hover {
+	color: #B9320B;
+}
+
+.table a:hover {
+	color: #B9320B;
+}
+
+.table tr:hover {
+	background: #9B9796;
+}
+
+.navbar ul li a:hover {
+	background-color: #9B6C5E;
+}
+
+
+body {
+	background-color: #8C7F7B;
+}
+
+footer {
+	background-color: #000;
+}
+
+footer ul li a {
+	color: #C82D00;
+}
+
+footer ul li a:hover {
+	background-color: #000;
+}
