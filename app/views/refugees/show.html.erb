@@ -1,33 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="refugee-profile">
+    <p id="notice"><%= notice %></p>
 
-<%= image_tag(@refugee.image_url.to_s) %>
+    <%= link_to 'Edit', edit_refugee_path(@refugee) %> |
+    <%= link_to 'Back', refugees_path %> <br>
 
-<p>
-  <strong>Name:</strong>
-  <%= @refugee.name %>
-</p>
+    <%= image_tag(@refugee.image_url.to_s, :size => '250x250') %>
 
-<p>
-  <strong>Contactnumber:</strong>
-  <%= @refugee.contactNumber %>
-</p>
+    <p>
+      <strong>Name:</strong>
+      <%= @refugee.name %>
+    </p>
 
-<p>
-  <strong>Occupation:</strong>
-  <%= @refugee.occupation %>
-</p>
+    <p>
+      <strong>Contactnumber:</strong>
+      <%= @refugee.contactNumber %>
+    </p>
 
-<p>
-  <strong>Language:</strong>
-  <%= @refugee.language %>
-</p>
+    <p>
+      <strong>Occupation:</strong>
+      <%= @refugee.occupation %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @refugee.description %>
-</p>
+    <p>
+      <strong>Language:</strong>
+      <%= @refugee.language %>
+    </p>
 
-<%= render 'partials/hire' %>
+    <p>
+      <strong>Description:</strong>
+      <%= @refugee.description %>
+    </p>
 
-<%= link_to 'Edit', edit_refugee_path(@refugee) %> |
-<%= link_to 'Back', refugees_path %>
+    <%= render 'partials/hire' %>
+
+</div>

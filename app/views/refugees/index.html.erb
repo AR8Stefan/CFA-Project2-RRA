@@ -2,25 +2,26 @@
 
 <%= @text %>
 
-<h1>Refugees</h1>
+<h1>Refugees for hire</h1>
 <% if @refugees.blank? %>
   <h4>There are no refugees containing the term <%= params[:search] %>.</h4>
 <% end %>
 
-
-<ul>
-  <li>
-    <%= form_tag(refugees_path, :method => "get", id: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search" %>
-    <%= submit_tag "Search", :name => nil %>
-    <% end %>
-  </li>
-  <li>
-    <% if user_signed_in? %>
-        <li><%= link_to "New Refugee", new_refugee_path %></li>
-    <% end %></li>
-</ul>
-
+<div class="container">
+  <div class="row">
+    <ul class="">
+      <% if user_signed_in? %>
+            <li  class="col-md-6 ref-link"><%= link_to "New Refugee", new_refugee_path %></li>
+      <% end %>
+      <li class="col-md-5">
+        <%= form_tag(refugees_path, :class => "ref-link", :method => "get", id: "search-form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search" %>
+        <%= submit_tag "Search", :name => nil %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
 
 <table class="table table-hover">
   <thead>

@@ -7,11 +7,20 @@ GENERAL
 ***********************************************/
 
 h1, h2, h3, h4, h5, h6 {
-	color: #B9320B;
+	color: #4b1000;
 }
 
 body {
 	
+}
+
+.main-slogan {
+	padding-right: 30px;
+	margin-bottom: 20px;
+}
+
+.hire-form {
+	height: 450px;
 }
 
 /***********************************************
@@ -26,6 +35,10 @@ NAVBAR
 
 nav {
 	height: 80px;
+}
+
+.navbar {
+	margin-bottom: 50px;
 }
 
 nav ul li {
@@ -124,9 +137,27 @@ li {
 TABLE
 ***********************************************/
 
-.table {
+.search-new ul li {
 	display: inline-block;
+	justify-content: space-between;
+	margin: 20px 5px;
+
+}
+
+.ref-link ul li {
+	display: flex;
+	direction: column;
+}
+
+.table {
+	/*display: inline-block;
 	justify-content: center;
+	width: 100%;*/
+	margin-bottom: 50px;
+}
+
+.table tbody tr td {
+	padding-top: 15px;
 }
 
 /***********************************************
@@ -146,6 +177,27 @@ CONTACT
 }
 
 /***********************************************
+REFUGEE PAGE
+***********************************************/
+
+.refugee-profile {
+	max-height: 500px;
+}
+
+.refugee-profile p {
+	padding: 15px 0px 10px 0px;
+}
+
+/***********************************************
+NEW REFUGEE PAGE
+***********************************************/
+
+.new-refugee-pg {
+	height: 500px;
+}
+
+
+/***********************************************
 COLOURS
 ***********************************************/
 
@@ -154,7 +206,7 @@ nav {
 }
 
 nav ul li a, a {
-	color: #C82D00;
+	color: #4b1000;
 	font-weight: bold;
 }
 
@@ -180,11 +232,13 @@ ul li a:hover {
 
 
 body {
-	background-color: #8C7F7B;
+	background-color: #e2e0de;
 }
 
 footer {
 	background-color: #000;
+	padding-top: 25px;
+	margin-top: 40px;
 }
 
 footer ul li a {

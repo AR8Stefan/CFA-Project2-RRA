@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div class="col-md-6 hire-form">
 
 <% if flash[:notice] %>
 	<div class="notice"><%= flash[:notice] %></div>
@@ -6,7 +6,8 @@
 	<div class="alert alert-danger"><%= flash[:warning] %></div>å
 <% end %>
 
-<h1>Contact Us</h1>
+<h1>Is this person right for you?</h1>
+	<p>Hire them.</p>
 
 <%= simple_form_for :contact, :url => contact_path, :method => :post do |f| %>
     <%= f.input :email, placeholder: 'Please type your email here' %>
