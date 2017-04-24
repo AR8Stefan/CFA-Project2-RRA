@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   devise_for :users
   root 'pages#index'
 
+  resources :conversations do
+    resources :messages
+  end
+
   get 'contact', to: 'contact#index'
     post 'contact', to: 'contact#mail'
 

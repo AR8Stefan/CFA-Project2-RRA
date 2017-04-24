@@ -27,7 +27,25 @@ body {
 HEADINGS
 ***********************************************/
 
+.slogan {
+	font-weight: bold;
+	font-size: 3em;
+}
 
+.about-heading {
+	font-weight: bold;
+	font-size: 2em;
+	padding: 10px;
+}
+
+.about-this {
+	font-size: 1.5em;
+	line-height: 1.75em;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	align-content: center;
+}
 
 /***********************************************
 NAVBAR
@@ -202,11 +220,11 @@ COLOURS
 ***********************************************/
 
 nav {
-	background-color: #9B6C5E;
+	background-color: #c0a197;
 }
 
 nav ul li a, a {
-	color: #4b1000;
+	color: #2d0a00;
 	font-weight: bold;
 }
 
@@ -227,7 +245,7 @@ ul li a:hover {
 }
 
 .navbar ul li a:hover {
-	background-color: #9B6C5E;
+	background-color: #c0a197;
 }
 
 

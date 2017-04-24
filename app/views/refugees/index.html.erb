@@ -27,7 +27,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Contactnumber</th>
+      <th>Contact Number</th>
       <th>Occupation</th>
       <th>Language</th>
       <th>Description</th>
@@ -43,9 +43,9 @@
         <td><%= refugee.occupation %></td>
         <td><%= refugee.language %></td>
         <td><%= refugee.description %></td>
-        <td><%= link_to 'Show', refugee %></td>
+        <td><%= link_to 'View', refugee %></td>
         <td><%= link_to 'Edit', edit_refugee_path(refugee) %></td>
-        <td><%= link_to 'Destroy', refugee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', refugee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

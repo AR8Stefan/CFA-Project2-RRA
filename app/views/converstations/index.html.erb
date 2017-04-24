@@ -1,0 +1,7 @@
+<h1>Some text</h1>
+
+<% conversations.each do |conversation| %>
+	<div>
+		<%= link_to conversation.subject, conversations_path(conversation) %>
+	</div>
+<% end %>
