@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'messages/message'
+
+  get 'chats/chat'
+
   get 'translate/index'
   post 'translate/index'
 
@@ -7,9 +11,13 @@ Rails.application.routes.draw do
   devise_for :users
   root 'pages#index'
 
-  resources :conversations do
+  resources :chats do
     resources :messages
   end
+
+  # get "mailbox/inbox" => "mailbox#inbox", as: :mailbox_inbox
+  # get "mailbox/sent" => "mailbox#sent", as: :mailbox_sent
+  # get "mailbox/trash" => "mailbox#trash", as: :mailbox_trash
 
   get 'contact', to: 'contact#index'
     post 'contact', to: 'contact#mail'

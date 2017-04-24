@@ -17,4 +17,18 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
     has_many :refugees
+
+    acts_as_messageable
+
+    # def method_name
+      
+    # end
+
+    def mailboxer_name
+      self.name
+    end
+
+    def mailboxer_email(object)
+      self.email
+    end
 end

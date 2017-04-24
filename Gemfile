@@ -59,6 +59,8 @@ gem 'mini_magick'
 
 gem 'mailgun-ruby', '~>1.1.4'
 
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass', branch: 'v1.0beta'
+
 gem 'mailboxer', github: 'mailboxer/mailboxer'
 
 group :development, :test do
