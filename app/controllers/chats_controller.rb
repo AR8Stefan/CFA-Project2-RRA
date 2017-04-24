@@ -12,12 +12,12 @@ def create
  	else
   		@chat = Chat.create!(chat_params)
  	end
- 	
+
  	redirect_to chat_messages_path(@chat)
 end	
 
 private
-  def chat
+  def chat_params
   	params.permit(:sender_id, :recipient_id)
   end
 end
