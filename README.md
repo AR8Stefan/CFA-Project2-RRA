@@ -91,6 +91,14 @@ I chose not to follow my wireframes 100% as I thought some things weren't necess
 * Knowing my limitations.
 * Understanding some error messages. (Still working on solving them on my own)
 
+### Future Implementations
+
+* Education page.
+* Admin roles.
+* Admin Dashboard.
+* Filter Refugees in search.
+* Page Translation.
+
 #### Known Issues
 
 * Search function
