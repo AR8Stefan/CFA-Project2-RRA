@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  rolify
   rolify :before_add => :before_add_method
 
   def before_add_method(role)
