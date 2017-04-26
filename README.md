@@ -1,8 +1,6 @@
 # CFA-Project2_RRA - Refugee Recruitment Agency
 
-This project is about using Ruby on Rails to make an application and Impress either Barrack Obama, Richard Murdoch or Bill & Malinda Gates. (I've chosen to impress Barrack Obama with this app. :) )
-
-### Set up
+### Gems Used
 
 * I used these gems in my project:
 
@@ -35,27 +33,6 @@ gem 'mailboxer', github: 'mailboxer/mailboxer'
 gem 'google-api-client', '~> 0.11'
 
 gem 'google-translate'
-
-* Next: 
->bundle install
-
-* Run these separately:
-
->rails generate simple_form:install
->rails generate devise:install
-
-
-* Next copy to the >app/assets/stylesheets/application.scss
-(Don't forget to rename the application.css file to .scss)
-
->@import "bootstrap-sprockets";
->@import "bootstrap";
-
-	copy to the >app/assets/javascripts/application.js
-	(>//= require jquery 
-	This code should be there by default, add it in if it isn't)
-
->//= require bootstrap-sprockets
 
 ---------------------------------------------
 
