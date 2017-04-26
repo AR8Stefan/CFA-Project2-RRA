@@ -2,8 +2,6 @@
 
 ### Gems Used
 
-* I used these gems in my project:
-
 gem 'rspec-rails', '~> 3.5'
 
 gem 'devise'
