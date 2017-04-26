@@ -91,7 +91,6 @@ I chose not to follow my wireframes 100% as I thought some things weren't necess
 * Understood what Models, Views and Controllers do a little more.
 * Implementing internal messaging system.
 * Knowing my limitations.
-* Understanding some error messages. (Still working on solving them on my own)
 
 ### Future Implementations
 
