@@ -97,6 +97,7 @@ I chose not to follow my wireframes 100% as I thought some things weren't necess
 
 * Education page.
 * Page Translation.
+* Pagination.
 
 #### Known Issues
 
