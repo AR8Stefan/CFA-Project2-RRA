@@ -6,6 +6,8 @@ This project is about using Ruby on Rails to make an application and Impress eit
 
 * I used these gems in my project:
 
+gem 'rspec-rails', '~> 3.5'
+
 gem 'devise'
 
 gem "rolify"
@@ -29,6 +31,10 @@ gem 'mailgun-ruby', '~>1.1.4'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass', branch: 'v1.0beta'
 
 gem 'mailboxer', github: 'mailboxer/mailboxer'
+
+gem 'google-api-client', '~> 0.11'
+
+gem 'google-translate'
 
 * Next: 
 >bundle install
